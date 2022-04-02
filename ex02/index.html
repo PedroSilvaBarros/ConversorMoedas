@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Conversão</title>
+    <link rel="shortcut icon" href="favi.ico" type="image/x-icon" />
+    <style>
+      body {
+        background-image: url("https://images.unsplash.com/photo-1580519541857-b9b8e6da1471?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1171&q=80");
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 100%;
+      }
+      p {
+        font-size: larger;
+      }
+      .div1 {
+        background-color: rgb(141, 141, 2);
+      }
+      .div2 {
+        background-color: rgb(141, 141, 2);
+      }
+    </style>
+    <script src="classe.js" defer></script>
+  </head>
+  <body>
+    <h1><mark>Conversão de moedas:</mark></h1>
+    <form id="form">
+      <b><mark>Digite a Taxa de Conversão:</mark></b>
+      <input id="taxa" type="number" />
+      <button type="button" id="btTaxa" onclick="armazenaTaxa(), ativarBtn()">
+        Confirmar
+      </button>
+      <button type="reset" id="btLimpar" onclick="btLimpar()">LIMPAR</button>
+      <br />
+      <b><mark>Digite um valor em Dólar:</mark></b>
+      <input id="dolar" type="number" placeholder="US$" />
+      <button id="btDolar" type="button" onclick="conversaoDolar()">
+        Calcular
+      </button>
+      <br />
+      <div>
+        <b><mark>Resultado em Real:</mark></b>
+        <input
+          class="div1"
+          type="text"
+          id="resultado"
+          placeholder="R$"
+          disabled=""
+        />
+      </div>
+      <b><mark>Digite um valor em Real:</mark></b>
+      <input id="real" type="number" placeholder="R$" />
+      <button id="btReal" type="button" onclick="conversaoReal()">
+        Calcular
+      </button>
+      <br />
+      <div>
+        <b><mark>Resultado em Dólar:</mark></b>
+        <input
+          class="div2"
+          type="text"
+          id="resultado2"
+          placeholder="US$"
+          disabled=""
+        />
+      </div>
+    </form>
+  </body>
+</html>
